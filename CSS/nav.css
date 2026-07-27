@@ -1,0 +1,31 @@
+/* https://www.w3schools.com/cssref/atrule_scope.php */
+
+@scope (.mainnav) {
+    :scope {
+        text-align: center;
+    }
+
+    ul{
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul li{
+        margin: 0 10px;
+    }
+
+    ul li a{
+        text-decoration: none;
+        color: red; 
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    p{
+        background-color: green;
+    }
+}
+
