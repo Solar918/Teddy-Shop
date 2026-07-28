@@ -13,7 +13,19 @@ function includeHTML() {
         xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4) {
-                if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                if (this.status == 200) {
+                    elmnt.innerHTML = this.responseText;
+
+                    // Check if a data-title attribute was set on the header element
+                    var pageTitle = elmnt.getAttribute("data-title");
+                    if (pageTitle) {
+                        var titleElem = elmnt.querySelector(".page-title");
+                        if (titleElem) {
+                            titleElem.textContent = pageTitle;
+                        }
+                    }
+                }
+
                 if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
                 /* Remove the attribute, and call this function once more: */
             elmnt.removeAttribute("w3-include-html");
