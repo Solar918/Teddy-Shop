@@ -5,23 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Teddy Shop</title>
 </head>
 
 <body>
-    <!-- Header / Nav -->
-    <header w3-include-html="/html/nav.html" data-title="Teddy Shop - Home"></header>
+    <div class="mainindex">
+        <!-- Header / Nav -->
+        <header class="index-nav" w3-include-html="/html/nav.html" data-title="Teddy Shop - Home"></header>
 
-    <!-- Page Content -->
-    
-    <p>Home content</p>
-    <p>More home content</p>
-    <p>Even more home content</p>
+        <!-- Page Content -->
+        <div class="index-content">
+            <div class="bg-img">
+                <img src="/assets/images/index-bg.jpeg" alt="Teddy Background images">
+            </div>
 
-    <!-- Footer -->
-    <footer w3-include-html="/html/footer.html"></footer>
+            <div class="index-text">
+                <h1>Discover the fluffiest friends around!</h1>
+                <p>Welcome to The Teddy Shop, where every teddy bear is made to bring a little extra warmth, comfort, and joy into your world! Whether you’re looking for a timeless gift for a loved one, a nostalgic collectible, or a cozy new best friend for your little one, our handcrafted plushies are created with endless love and the softest materials. We believe you’re never too old for a cuddle—explore our collection today and find the bear that’s waiting to come home with you!</p>
+            </div>
+        </div>
 
-    <script src="/js/includehtml.js"></script>
-    <script>includeHTML();</script>
+        <!-- Footer -->
+        <footer class="index-footer" w3-include-html="/html/footer.html"></footer>
+
+        <script src="/js/includehtml.js"></script>
+        <script>includeHTML();</script>
+    </div>
 </body>
 </html>
