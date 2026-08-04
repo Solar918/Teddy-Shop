@@ -16,7 +16,7 @@ function includeHTML() {
                 if (this.status == 200) {
                     elmnt.innerHTML = this.responseText;
 
-                    // Check if a data-title attribute was set on the header element
+                    /* Check if a data-title attribute was set on the header element */
                     var pageTitle = elmnt.getAttribute("data-title");
                     if (pageTitle) {
                         var titleElem = elmnt.querySelector(".page-title");
