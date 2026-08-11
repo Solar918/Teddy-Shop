@@ -15,9 +15,60 @@
 
         <!-- Page Content -->
         <div class="contactus-content">
-
             <!-- Main content -->
-            
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12796.544596921289!2d174.7425262238037!3d-36.69526609028381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d3ae633fffe7d%3A0xd2f54b78b4b5fdc0!2sLong%20Bay%20College!5e0!3m2!1sen!2snz!4v1786321944026!5m2!1sen!2snz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+            <div class="contactus-text">
+                <h1>We're Here to Help!</h1>
+                <p>Whether you have a question about our cuddly collection, need updates on a tracking number, or want to chat about a custom order, our team is ready to assist you. Drop us a line and we’ll get back to you as soon as possible.</p>
+                <h1>Get In Touch</h1>
+                <ul>
+                    <li>
+                        <p>
+                            <span class="bold">Email us: </span>support@teddybearshop.com
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span class="bold">Operating Hours: </span>Monday – Friday, 9:00 AM – 5:00 PM (NZST)
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span class="bold">Location: </span>Proudly operating from Long Bay, Auckland, New Zealand
+                        </p>
+                    </li>
+                </ul>
+                <div class="contact-form-div">
+                    <h1>Send Us a Message</h1>
+                    <p>Skip the email and fill out our quick form below. We'll receive it instantly!</p>
+                    <form  class="contact-form" action="/submit-contact" method="POST">
+                        <div class="form">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your full name">
+                        </div>
+
+                        <div class="form">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+
+                        <div class="form">
+                            <label for="order-number">Order Number <span>(Optional)</span></label>
+                            <input type="text" id="order-number" name="order_number" placeholder="e.g. #1024">
+                        </div>
+
+                        <div class="form">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="How can we help you today?"></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Submit Message</button>
+                    </form>
+                </div>
+                
+            </div>
         </div>
 
         <!-- Footer -->

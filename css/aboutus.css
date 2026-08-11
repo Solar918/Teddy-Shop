@@ -1,5 +1,37 @@
 /* https://www.w3schools.com/cssref/atrule_scope.php */
 
 @scope (.mainaboutus) {
+    .aboutus-content {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
 
+    .teddy-img {
+        width: 20%;
+        height: auto;
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
+    .aboutus-text {
+        padding: 5px;
+        max-width: 70%;
+        margin: auto;
+    }
+
+    .aboutus-text h1 {
+        text-align: center;
+        font-size: 35px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .aboutus-text .bold {
+        font-weight: bold;
+    }
+
+    .aboutus-text p {
+        font-size: 20px;
+    }
 }
